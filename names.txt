@@ -1,0 +1,5 @@
+Git Branches:
+
+main -> Original one, contains only a readme and a .gitignore.
+
+prime -> Uses yarn/vite to make a react app for the frontend development.
