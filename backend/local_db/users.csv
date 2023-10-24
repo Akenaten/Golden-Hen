@@ -1,0 +1,5 @@
+username,email,password,first_name,middle_name,last_name,created_at
+johndoe,johndoe@example.com,pa$$w0rd,John,,Doe,15-10-2023
+janedoe,janedoe@example.com,secure123,Jane,Mary,Doe,22-09-2022
+bobsmith,bob.smith@email.com,letmein,Bob,Michael,Smith,01-03-2021
+alicesmith,alice@example.com,password123,Alice,,Smith,05-12-2019

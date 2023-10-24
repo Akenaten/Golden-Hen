@@ -1,0 +1,3 @@
+-- .tables
+
+SELECT * FROM "users";
