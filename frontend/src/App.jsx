@@ -1,14 +1,10 @@
-
-import './App.css'
-import { LoginScreen } from './screens/login-screen'
+import "./index.css";
+import AccountPanelScreen from "./screens/account-panel";
+import LoginScreen from "./screens/login-screen";
+import SignupScreen from "./screens/signup-screen";
 
 function App() {
-  
-
-  return (
-    <LoginScreen/>
-
-  )
+    return <SignupScreen />;
 }
 
-export default App
+export default App;
