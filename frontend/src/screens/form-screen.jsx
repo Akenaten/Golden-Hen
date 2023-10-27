@@ -3,9 +3,7 @@ import { useState } from "react";
 
 //TODO: might have to pass-in the url for action later.
 export default function FormScreen({ fields, postURL }) {
-    const [values, setValue] = useState(["", ""]);
-    console.log("postURL:", postURL);
-    console.log("fields:", fields);
+    const [values, setValues] = useState(fields.map(() => ""));
 
     //TODO: set the action and method later.
     return (
@@ -17,7 +15,7 @@ export default function FormScreen({ fields, postURL }) {
         >
             {fields.map((field, index) => (
                 <div key={field} className="m-3">
-                    {fetchInputBox({ field, values, index, setValue })}
+                    {fetchInputBox({ field, values, index, setValues })}
                 </div>
             ))}
 
@@ -36,7 +34,7 @@ export default function FormScreen({ fields, postURL }) {
 //TODO: implement this later (if necesary). Might wanna change the parameter requirements.
 function validateInput() {}
 
-function fetchInputBox({ field, values, index, setValue }) {
+function fetchInputBox({ field, values, index, setValues }) {
     const fieldTypes = ["text", "text"];
 
     return (
@@ -50,7 +48,7 @@ function fetchInputBox({ field, values, index, setValue }) {
                 onChange={(e) => {
                     const newValues = [...values];
                     newValues[index] = e.target.value;
-                    setValue(newValues);
+                    setValues(newValues);
                 }}
             />
         </div>
