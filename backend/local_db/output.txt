@@ -1,1 +1,6 @@
-
+1|Maurricio|thisismypassword|arcanebound@yahoo.com|Panos||Karafire|10-10-2022
+2|SneakyThief|passaporte!212|dormohar@gmail.com|John|Long|Johny|1-1-1999
+3|Tuturu|JosukeIScool|10001000|Jonathan||Ahortig|
+4|NEW_USERNAME|JosukeIScool@yahoo.com|testpass|Jonathan||Ahortig|
+5|notAbot22|yahooacc33@yahoo.com|totallysafe|Jonathan||Jacobo|01-01-1991
+6|DesertEagle|tester1234@gmail.com|AbdulsHeaven!|Yonah||Abdul|01-01-1991
