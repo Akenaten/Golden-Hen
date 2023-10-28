@@ -31,16 +31,26 @@ export default function FormScreen({ fields, postURL }) {
     );
 }
 
-//TODO: implement this later (if necesary). Might wanna change the parameter requirements.
-function validateInput() {}
+//TODO: change this later for posting the request.
+function validateInput(e) {
+    e.preventDefault();
+    location.reload();
+}
+
+function getFieldType(field) {
+    switch (field.toLowerCase()) {
+        case "email":
+            return "email";
+        default:
+            return "text";
+    }
+}
 
 function fetchInputBox({ field, values, index, setValues }) {
-    const fieldTypes = ["text", "text"];
-
     return (
         <div>
             <input
-                type={fieldTypes[index]}
+                type={getFieldType(field)}
                 placeholder={field}
                 className="input input-bordered input-info w-full max-w-xs"
                 required="required"
