@@ -8,11 +8,11 @@ export const routesConfig = [
         element: <App />,
         children: [
             {
-                path: "/login",
+                path: "login",
                 element: <LoginScreen />,
             },
             {
-                path: "/sign-up",
+                path: "sign-up",
                 element: <SignupScreen />,
             },
         ],
